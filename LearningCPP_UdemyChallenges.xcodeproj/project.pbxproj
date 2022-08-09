@@ -205,6 +205,8 @@
 		02E8C8AE28A31DC30056C7BD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		02E8C8B728A31DD10056C7BD /* Enumerations */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Enumerations; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E8C8B928A31DD10056C7BD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		02E8C8BF28A325400056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		02E8C8C028A3275B0056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				02E8C81F28A318210056C7BD /* main.cpp */,
+				02E8C8BF28A325400056C7BD /* description.txt */,
 			);
 			path = StatementsAndOperators;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				02E8C82A28A318490056C7BD /* main.cpp */,
+				02E8C8C028A3275B0056C7BD /* description.txt */,
 			);
 			path = ControllingProgramFlow;
 			sourceTree = "<group>";

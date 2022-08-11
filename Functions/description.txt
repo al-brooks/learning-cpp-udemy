@@ -1,0 +1,47 @@
+Functions Challenge: Refactor Controlling Program Flow Challenge Using Functions
+
+Instructions:
+    ->  Recall the challenge from section 9.
+    ->  Your challenge is to modularize your solution to section 9 by refactoring
+        it to utilize functions.
+    ->  You decide how you want to modularize the program.
+
+ Hints:
+    1.  Create functions for each major function
+    2.  Keep the functions small
+    3.  Remember the Boss/Worker analogy
+    4.  Keep the vector declaration in the main function and pass the vector object
+    5.  DO NOT move the vector object outside main and make it a global variable
+    6.  You can start by defining a function that displays a menu
+    7.  You can then define a function that reads the selection from the user
+        and returns uppercase
+    8.  Create functions for each menu option
+    9.  Create functions that display the list of numbers, calculate the mean, etc.
+
+Finally:
+    ->  Take it one function at a time, and take it slow.
+    ->  If you get frustrated, take a break -- this isn't as easy as it looks the
+        first time you do it.
+    ->  Don't forget to use function prototypes
+
+ Section 9 Program:
+     This challenge is about using a collection (list) of integers and allowing the user
+     to select options from a menu to perform operations on the list.
+
+     Your program should display a menu options to the user as follows:
+
+     P - Print numbers
+     A - Add a number
+     M - Display mean of the numbers
+     S - Display the smallest number
+     L - Display the largest number
+     Q - Quit
+
+     Enter your choice:
+
+ Additional functionality if you wish to extend this program:
+    ->  Search for a number in the list and if found display the number of times it occurs in the list
+    ->  Clearing out the list (make it empty again) (Hint: the vector class has a .clear() method)
+    ->  Don't allow duplicate entries
+    ->  Etc - come up with your own ideas!
+

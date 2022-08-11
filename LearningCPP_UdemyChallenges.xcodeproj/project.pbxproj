@@ -210,6 +210,7 @@
 		02E8C8C128A4290D0056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
 		02E8C8C328A42A070056C7BD /* LetterPyramid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LetterPyramid.hpp; sourceTree = "<group>"; };
 		02E8C98A28A59CE80056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		02E8C98B28A59E820056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				02E8C84B28A3190E0056C7BD /* main.cpp */,
+				02E8C98B28A59E820056C7BD /* description.txt */,
 			);
 			path = PointersAndReferences;
 			sourceTree = "<group>";

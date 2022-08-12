@@ -25,6 +25,7 @@
 		02E8C8BA28A31DD10056C7BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C8B928A31DD10056C7BD /* main.cpp */; };
 		02E8C98F28A59F970056C7BD /* Movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C98D28A59F970056C7BD /* Movie.cpp */; };
 		02E8C99228A5A14A0056C7BD /* Movies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C99028A5A14A0056C7BD /* Movies.cpp */; };
+		02E8C99528A600710056C7BD /* MoviesUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C99328A600710056C7BD /* MoviesUtil.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -218,6 +219,8 @@
 		02E8C98E28A59F970056C7BD /* Movie.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Movie.hpp; sourceTree = "<group>"; };
 		02E8C99028A5A14A0056C7BD /* Movies.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Movies.cpp; sourceTree = "<group>"; };
 		02E8C99128A5A14A0056C7BD /* Movies.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Movies.hpp; sourceTree = "<group>"; };
+		02E8C99328A600710056C7BD /* MoviesUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MoviesUtil.cpp; sourceTree = "<group>"; };
+		02E8C99428A600710056C7BD /* MoviesUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MoviesUtil.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,6 +448,8 @@
 				02E8C98E28A59F970056C7BD /* Movie.hpp */,
 				02E8C99028A5A14A0056C7BD /* Movies.cpp */,
 				02E8C99128A5A14A0056C7BD /* Movies.hpp */,
+				02E8C99328A600710056C7BD /* MoviesUtil.cpp */,
+				02E8C99428A600710056C7BD /* MoviesUtil.hpp */,
 			);
 			path = "OOP-ClassesAndObjects";
 			sourceTree = "<group>";
@@ -949,6 +954,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E8C99528A600710056C7BD /* MoviesUtil.cpp in Sources */,
 				02E8C99228A5A14A0056C7BD /* Movies.cpp in Sources */,
 				02E8C98F28A59F970056C7BD /* Movie.cpp in Sources */,
 				02E8C85728A319510056C7BD /* main.cpp in Sources */,

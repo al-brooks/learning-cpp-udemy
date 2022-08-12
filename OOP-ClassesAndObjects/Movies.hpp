@@ -8,10 +8,9 @@
 
 class Movies {
 private:
-    std::vector<Movie> *movies;
+    std::vector<Movie> movies;
 public:
     Movies() = default;
-    Movies(Movies &&source); // Move Constructor
     ~Movies() = default;
     
     bool add_movie(std::string name, std::string rating, int watched);

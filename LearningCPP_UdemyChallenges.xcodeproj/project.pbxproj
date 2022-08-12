@@ -23,6 +23,8 @@
 		02E8C8A428A31DA10056C7BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C8A328A31DA10056C7BD /* main.cpp */; };
 		02E8C8AF28A31DC30056C7BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C8AE28A31DC30056C7BD /* main.cpp */; };
 		02E8C8BA28A31DD10056C7BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C8B928A31DD10056C7BD /* main.cpp */; };
+		02E8C98F28A59F970056C7BD /* Movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C98D28A59F970056C7BD /* Movie.cpp */; };
+		02E8C99228A5A14A0056C7BD /* Movies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C99028A5A14A0056C7BD /* Movies.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -211,6 +213,11 @@
 		02E8C8C328A42A070056C7BD /* LetterPyramid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LetterPyramid.hpp; sourceTree = "<group>"; };
 		02E8C98A28A59CE80056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
 		02E8C98B28A59E820056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		02E8C98C28A59F3E0056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		02E8C98D28A59F970056C7BD /* Movie.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Movie.cpp; sourceTree = "<group>"; };
+		02E8C98E28A59F970056C7BD /* Movie.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Movie.hpp; sourceTree = "<group>"; };
+		02E8C99028A5A14A0056C7BD /* Movies.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Movies.cpp; sourceTree = "<group>"; };
+		02E8C99128A5A14A0056C7BD /* Movies.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Movies.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +440,11 @@
 			isa = PBXGroup;
 			children = (
 				02E8C85628A319510056C7BD /* main.cpp */,
+				02E8C98C28A59F3E0056C7BD /* description.txt */,
+				02E8C98D28A59F970056C7BD /* Movie.cpp */,
+				02E8C98E28A59F970056C7BD /* Movie.hpp */,
+				02E8C99028A5A14A0056C7BD /* Movies.cpp */,
+				02E8C99128A5A14A0056C7BD /* Movies.hpp */,
 			);
 			path = "OOP-ClassesAndObjects";
 			sourceTree = "<group>";
@@ -937,6 +949,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E8C99228A5A14A0056C7BD /* Movies.cpp in Sources */,
+				02E8C98F28A59F970056C7BD /* Movie.cpp in Sources */,
 				02E8C85728A319510056C7BD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,70 @@
+# Operator Overloading Challenge
+-----------------------------------
+Overload the following operators in the Mystring Class.
+
+To gain experience overloading operators you should do this challenge [twice].
+
+First, Overload the operators using [member] functions and then in another project
+overload the same operators again using [non-member] functions.
+
+Please do it once using member functions and then again using non-member functions.
+
+Here is a list of some of the operators that you can overload for this class:
+
+[-] : Unary minus. Returns the lowercase version of the object's string
+        i.e. [-s1]
+
+[==] : Returns true if the two strings are equal
+        i.e. [s1 == s2]
+
+[!=] : Returns true if the two strings are NOT equal
+        i.e. [s1 != s2]
+
+[<] : returns true if the lhs string s lexically less than the rhs string
+        i.e. [s1 < s2]
+
+[>] : returns true if the lhs string is lexically greater than the rhs string
+        i.e. [s1 > s2]
+
+[+] : concatenation. returns an object that concatenates the lhs and rhs
+        i.e. [s3 = s1 + s2]
+
+[+=] : concatenate the rhs string to the lhs string and stor the result in the lhs object
+        i.e. [s1 += s2] (s1 = s1 + s2)
+
+[*] : repeat. results in a string that is copied n times
+        i.e. [s2 * 3]
+        Example:
+            s2 = "abc";
+            s1 = s2 * 3;
+            s1 will result in "abcabcabc"
+            
+[*=] : repeat the string on the lhs n times and store the result back in the lhs object
+        i.e. [s1 = "abc"]
+             [s1 *= 4] = "abcabcabcabc"
+             
+If you wish to overload the ++ and -- operators remember that they have pre and post versions.
+
+The semantics should be as follows (this shows the member method version)
+
+Mystring &operator++() { // pre-increment
+    // whatever you want the increment to do (maybe make all letters uppercase)
+    return *this;
+}
+                
+// Note that post-increment returns a Mystring by value not be reference
+Mystring operator++(int) { // post-increment
+    Mystring temp {*this}; // make a copy
+    operator++(); // call pre-increment - make sure you call pre-increment!
+    return temp; // return the old value;
+}
+
+Have fun! Think of some other operators that might be useful!
+Don't worry if they all don't make sense -- this is an exercise about learning how
+to overload operators.
+
+Hints:
+1. take advantage of the std::strcmp function for the equality operators!
+2. the += and *= operators should return a Mystring &
+3. rather than duplicate code in the += and *= functions, use the + and * operators which you have already overloaded!
+

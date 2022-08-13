@@ -26,6 +26,7 @@
 		02E8C98F28A59F970056C7BD /* Movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C98D28A59F970056C7BD /* Movie.cpp */; };
 		02E8C99228A5A14A0056C7BD /* Movies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C99028A5A14A0056C7BD /* Movies.cpp */; };
 		02E8C99528A600710056C7BD /* MoviesUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C99328A600710056C7BD /* MoviesUtil.cpp */; };
+		02E8C99928A7324B0056C7BD /* MyStringMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C99728A7324A0056C7BD /* MyStringMember.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -221,6 +222,9 @@
 		02E8C99128A5A14A0056C7BD /* Movies.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Movies.hpp; sourceTree = "<group>"; };
 		02E8C99328A600710056C7BD /* MoviesUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MoviesUtil.cpp; sourceTree = "<group>"; };
 		02E8C99428A600710056C7BD /* MoviesUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MoviesUtil.hpp; sourceTree = "<group>"; };
+		02E8C99628A7320F0056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		02E8C99728A7324A0056C7BD /* MyStringMember.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyStringMember.cpp; sourceTree = "<group>"; };
+		02E8C99828A7324A0056C7BD /* MyStringMember.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyStringMember.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,6 +462,9 @@
 			isa = PBXGroup;
 			children = (
 				02E8C86128A319670056C7BD /* main.cpp */,
+				02E8C99628A7320F0056C7BD /* description.txt */,
+				02E8C99728A7324A0056C7BD /* MyStringMember.cpp */,
+				02E8C99828A7324A0056C7BD /* MyStringMember.hpp */,
 			);
 			path = OperatorOverloading;
 			sourceTree = "<group>";
@@ -965,6 +972,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E8C99928A7324B0056C7BD /* MyStringMember.cpp in Sources */,
 				02E8C86228A319670056C7BD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

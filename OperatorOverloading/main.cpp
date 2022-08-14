@@ -1,4 +1,5 @@
 #include "MyStringMember.hpp" // member functions
+#include "MyStringFriend.hpp" // non-member functions
 
 using
 std::cout,
@@ -7,8 +8,8 @@ std::endl;
 
 int main() {
     cout << std::boolalpha;
-    MyStringMember a{"alex"};
-    MyStringMember b{"Alex"};
+    MyStringFriend a{"alex"};
+    MyStringFriend b{"Alex"};
 
     // comparison operators
     cout << (a == b) << endl; // false
@@ -17,7 +18,7 @@ int main() {
     cout << (a > b) << endl; // true
 
     // lowercase
-    MyStringMember s1{"ALEX"};
+    MyStringFriend s1{"ALEX"};
     cout << s1 << endl;
     s1 = -s1; // Using Move Assignment
     cout << s1 << endl; // alex
@@ -31,17 +32,17 @@ int main() {
     cout << s1 << endl; // alex*******--------
 
     // Repeat
-    MyStringMember s2{"12345"};
+    MyStringFriend s2{"12345"};
     s1 = s2 * 3;
     cout << s1 << endl; // 123451234512345
 
     // Repeat and Assign
-    MyStringMember s3{"abcdef"};
+    MyStringFriend s3{"abcdef"};
     s3 *= 5;
     cout << s3 << endl; // abcdefabcdefabcdefabcdefabcdef
 
     // Insertion
-    MyStringMember insert;
+    MyStringFriend insert;
     cout << "Insert new MyStringMember: ";
     cin >> insert;
     cout << endl;

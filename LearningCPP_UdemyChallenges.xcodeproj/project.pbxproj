@@ -33,6 +33,12 @@
 		02E8C9AA28AAE3E40056C7BD /* Savings_Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9A828AAE3E40056C7BD /* Savings_Account.cpp */; };
 		02E8C9AD28AAE4300056C7BD /* Checking_Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9AB28AAE4300056C7BD /* Checking_Account.cpp */; };
 		02E8C9B028AAE45E0056C7BD /* Trust_Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9AE28AAE45E0056C7BD /* Trust_Account.cpp */; };
+		02E8C9B428AAE5E10056C7BD /* I_Printable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9B228AAE5E00056C7BD /* I_Printable.cpp */; };
+		02E8C9B728AAE6040056C7BD /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9B528AAE6040056C7BD /* Account.cpp */; };
+		02E8C9BA28AAE6480056C7BD /* Account_Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9B828AAE6480056C7BD /* Account_Util.cpp */; };
+		02E8C9BD28AAE6800056C7BD /* Checking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9BB28AAE6800056C7BD /* Checking.cpp */; };
+		02E8C9C028AAE6C00056C7BD /* Savings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9BE28AAE6C00056C7BD /* Savings.cpp */; };
+		02E8C9C328AAE6F40056C7BD /* Trust.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9C128AAE6F40056C7BD /* Trust.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -244,6 +250,19 @@
 		02E8C9AC28AAE4300056C7BD /* Checking_Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Checking_Account.hpp; sourceTree = "<group>"; };
 		02E8C9AE28AAE45E0056C7BD /* Trust_Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Trust_Account.cpp; sourceTree = "<group>"; };
 		02E8C9AF28AAE45E0056C7BD /* Trust_Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Trust_Account.hpp; sourceTree = "<group>"; };
+		02E8C9B128AAE5900056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		02E8C9B228AAE5E00056C7BD /* I_Printable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = I_Printable.cpp; sourceTree = "<group>"; };
+		02E8C9B328AAE5E00056C7BD /* I_Printable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = I_Printable.hpp; sourceTree = "<group>"; };
+		02E8C9B528AAE6040056C7BD /* Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		02E8C9B628AAE6040056C7BD /* Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Account.hpp; sourceTree = "<group>"; };
+		02E8C9B828AAE6480056C7BD /* Account_Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account_Util.cpp; sourceTree = "<group>"; };
+		02E8C9B928AAE6480056C7BD /* Account_Util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Account_Util.hpp; sourceTree = "<group>"; };
+		02E8C9BB28AAE6800056C7BD /* Checking.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Checking.cpp; sourceTree = "<group>"; };
+		02E8C9BC28AAE6800056C7BD /* Checking.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Checking.hpp; sourceTree = "<group>"; };
+		02E8C9BE28AAE6C00056C7BD /* Savings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Savings.cpp; sourceTree = "<group>"; };
+		02E8C9BF28AAE6C00056C7BD /* Savings.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Savings.hpp; sourceTree = "<group>"; };
+		02E8C9C128AAE6F40056C7BD /* Trust.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Trust.cpp; sourceTree = "<group>"; };
+		02E8C9C228AAE6F40056C7BD /* Trust.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Trust.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -513,6 +532,19 @@
 			isa = PBXGroup;
 			children = (
 				02E8C87728A319A00056C7BD /* main.cpp */,
+				02E8C9B128AAE5900056C7BD /* description.txt */,
+				02E8C9B228AAE5E00056C7BD /* I_Printable.cpp */,
+				02E8C9B328AAE5E00056C7BD /* I_Printable.hpp */,
+				02E8C9B528AAE6040056C7BD /* Account.cpp */,
+				02E8C9B628AAE6040056C7BD /* Account.hpp */,
+				02E8C9B828AAE6480056C7BD /* Account_Util.cpp */,
+				02E8C9B928AAE6480056C7BD /* Account_Util.hpp */,
+				02E8C9BB28AAE6800056C7BD /* Checking.cpp */,
+				02E8C9BC28AAE6800056C7BD /* Checking.hpp */,
+				02E8C9BE28AAE6C00056C7BD /* Savings.cpp */,
+				02E8C9BF28AAE6C00056C7BD /* Savings.hpp */,
+				02E8C9C128AAE6F40056C7BD /* Trust.cpp */,
+				02E8C9C228AAE6F40056C7BD /* Trust.hpp */,
 			);
 			path = Polymorphism;
 			sourceTree = "<group>";
@@ -1028,6 +1060,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E8C87828A319A00056C7BD /* main.cpp in Sources */,
+				02E8C9B728AAE6040056C7BD /* Account.cpp in Sources */,
+				02E8C9BD28AAE6800056C7BD /* Checking.cpp in Sources */,
+				02E8C9B428AAE5E10056C7BD /* I_Printable.cpp in Sources */,
+				02E8C9BA28AAE6480056C7BD /* Account_Util.cpp in Sources */,
+				02E8C9C328AAE6F40056C7BD /* Trust.cpp in Sources */,
+				02E8C9C028AAE6C00056C7BD /* Savings.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

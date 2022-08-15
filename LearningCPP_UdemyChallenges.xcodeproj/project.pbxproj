@@ -28,6 +28,11 @@
 		02E8C99528A600710056C7BD /* MoviesUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C99328A600710056C7BD /* MoviesUtil.cpp */; };
 		02E8C99928A7324B0056C7BD /* MyStringMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C99728A7324A0056C7BD /* MyStringMember.cpp */; };
 		02E8C99C28A8AC040056C7BD /* MyStringFriend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C99A28A8AC040056C7BD /* MyStringFriend.cpp */; };
+		02E8C9A428AAE3000056C7BD /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9A228AAE3000056C7BD /* Account.cpp */; };
+		02E8C9A728AAE39D0056C7BD /* Account_Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9A528AAE39D0056C7BD /* Account_Util.cpp */; };
+		02E8C9AA28AAE3E40056C7BD /* Savings_Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9A828AAE3E40056C7BD /* Savings_Account.cpp */; };
+		02E8C9AD28AAE4300056C7BD /* Checking_Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9AB28AAE4300056C7BD /* Checking_Account.cpp */; };
+		02E8C9B028AAE45E0056C7BD /* Trust_Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02E8C9AE28AAE45E0056C7BD /* Trust_Account.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -228,6 +233,17 @@
 		02E8C99828A7324A0056C7BD /* MyStringMember.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyStringMember.hpp; sourceTree = "<group>"; };
 		02E8C99A28A8AC040056C7BD /* MyStringFriend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyStringFriend.cpp; sourceTree = "<group>"; };
 		02E8C99B28A8AC040056C7BD /* MyStringFriend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyStringFriend.hpp; sourceTree = "<group>"; };
+		02E8C9A128AAE29A0056C7BD /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		02E8C9A228AAE3000056C7BD /* Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		02E8C9A328AAE3000056C7BD /* Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Account.hpp; sourceTree = "<group>"; };
+		02E8C9A528AAE39D0056C7BD /* Account_Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account_Util.cpp; sourceTree = "<group>"; };
+		02E8C9A628AAE39D0056C7BD /* Account_Util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Account_Util.hpp; sourceTree = "<group>"; };
+		02E8C9A828AAE3E40056C7BD /* Savings_Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Savings_Account.cpp; sourceTree = "<group>"; };
+		02E8C9A928AAE3E40056C7BD /* Savings_Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Savings_Account.hpp; sourceTree = "<group>"; };
+		02E8C9AB28AAE4300056C7BD /* Checking_Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Checking_Account.cpp; sourceTree = "<group>"; };
+		02E8C9AC28AAE4300056C7BD /* Checking_Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Checking_Account.hpp; sourceTree = "<group>"; };
+		02E8C9AE28AAE45E0056C7BD /* Trust_Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Trust_Account.cpp; sourceTree = "<group>"; };
+		02E8C9AF28AAE45E0056C7BD /* Trust_Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Trust_Account.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -478,6 +494,17 @@
 			isa = PBXGroup;
 			children = (
 				02E8C86C28A319950056C7BD /* main.cpp */,
+				02E8C9A128AAE29A0056C7BD /* description.txt */,
+				02E8C9A228AAE3000056C7BD /* Account.cpp */,
+				02E8C9A328AAE3000056C7BD /* Account.hpp */,
+				02E8C9A528AAE39D0056C7BD /* Account_Util.cpp */,
+				02E8C9A628AAE39D0056C7BD /* Account_Util.hpp */,
+				02E8C9A828AAE3E40056C7BD /* Savings_Account.cpp */,
+				02E8C9A928AAE3E40056C7BD /* Savings_Account.hpp */,
+				02E8C9AB28AAE4300056C7BD /* Checking_Account.cpp */,
+				02E8C9AC28AAE4300056C7BD /* Checking_Account.hpp */,
+				02E8C9AE28AAE45E0056C7BD /* Trust_Account.cpp */,
+				02E8C9AF28AAE45E0056C7BD /* Trust_Account.hpp */,
 			);
 			path = Inheritance;
 			sourceTree = "<group>";
@@ -987,7 +1014,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E8C9AD28AAE4300056C7BD /* Checking_Account.cpp in Sources */,
 				02E8C86D28A319950056C7BD /* main.cpp in Sources */,
+				02E8C9A728AAE39D0056C7BD /* Account_Util.cpp in Sources */,
+				02E8C9A428AAE3000056C7BD /* Account.cpp in Sources */,
+				02E8C9B028AAE45E0056C7BD /* Trust_Account.cpp in Sources */,
+				02E8C9AA28AAE3E40056C7BD /* Savings_Account.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

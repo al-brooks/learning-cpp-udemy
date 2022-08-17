@@ -1,7 +1,10 @@
-#include "auto-grader.hpp"
+//#include "auto-grader.hpp"
+#include "WordFinder.hpp"
 
 int main() {
-    displayScores("responses.txt");
+    WordFinder test;
+    
+    test.search_file("romeoandjuliet.txt");
     
     return 0;
 }

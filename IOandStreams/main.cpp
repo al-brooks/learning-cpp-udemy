@@ -1,14 +1,7 @@
-//
-//  main.cpp
-//  IOandStreams
-//
-//  Created by Alexander Brooks on 8/9/22.
-//
+#include "auto-grader.hpp"
 
-#include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    displayScores("responses.txt");
+    
     return 0;
 }

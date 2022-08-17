@@ -1,10 +1,11 @@
 //#include "auto-grader.hpp"
-#include "WordFinder.hpp"
+//#include "WordFinder.hpp"
+#include "CopyRomeoAndJuliet.hpp"
 
 int main() {
-    WordFinder test;
+    CopyRomeoAndJuliet test;
     
-    test.search_file("romeoandjuliet.txt");
+    test.copy_file("romeoandjuliet.txt");
     
     return 0;
 }

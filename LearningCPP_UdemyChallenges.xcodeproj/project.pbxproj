@@ -292,6 +292,9 @@
 		02E8CA4128AD717C0056C7BD /* word-finder-description */ = {isa = PBXFileReference; lastKnownFileType = text; path = "word-finder-description"; sourceTree = "<group>"; };
 		02E8CA4228AD71A80056C7BD /* romeoandjuliet.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = romeoandjuliet.txt; sourceTree = "<group>"; };
 		02E8CA4428AD72770056C7BD /* WordFinder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WordFinder.hpp; sourceTree = "<group>"; };
+		02E8CA4E28ADAD080056C7BD /* CopyRomeoAndJuliet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CopyRomeoAndJuliet.hpp; sourceTree = "<group>"; };
+		02E8CA5028ADAD2E0056C7BD /* CopyRomeoAndJuliet-description */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CopyRomeoAndJuliet-description"; sourceTree = "<group>"; };
+		02E8CA5228ADB01A0056C7BD /* new-romeo-juliet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "new-romeo-juliet.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -612,14 +615,13 @@
 		02E8C89728A31D550056C7BD /* IOandStreams */ = {
 			isa = PBXGroup;
 			children = (
+				02E8CA5128ADAD3C0056C7BD /* Descriptions */,
 				02E8C8BE28A31DF60056C7BD /* TextFiles */,
 				02E8C89828A31D550056C7BD /* main.cpp */,
-				02E8C9FA28AD635D0056C7BD /* format-output-description.txt */,
 				02E8CA0528AD66790056C7BD /* format-output.hpp */,
-				02E8C9FD28AD64180056C7BD /* auto-grader-description.txt */,
 				02E8CA0228AD65B60056C7BD /* auto-grader.hpp */,
-				02E8CA4128AD717C0056C7BD /* word-finder-description */,
 				02E8CA4428AD72770056C7BD /* WordFinder.hpp */,
+				02E8CA4E28ADAD080056C7BD /* CopyRomeoAndJuliet.hpp */,
 			);
 			path = IOandStreams;
 			sourceTree = "<group>";
@@ -651,10 +653,22 @@
 		02E8C8BE28A31DF60056C7BD /* TextFiles */ = {
 			isa = PBXGroup;
 			children = (
+				02E8CA5228ADB01A0056C7BD /* new-romeo-juliet.txt */,
 				02E8C9FE28AD64690056C7BD /* responses.txt */,
 				02E8CA4228AD71A80056C7BD /* romeoandjuliet.txt */,
 			);
 			path = TextFiles;
+			sourceTree = "<group>";
+		};
+		02E8CA5128ADAD3C0056C7BD /* Descriptions */ = {
+			isa = PBXGroup;
+			children = (
+				02E8C9FA28AD635D0056C7BD /* format-output-description.txt */,
+				02E8CA4128AD717C0056C7BD /* word-finder-description */,
+				02E8C9FD28AD64180056C7BD /* auto-grader-description.txt */,
+				02E8CA5028ADAD2E0056C7BD /* CopyRomeoAndJuliet-description */,
+			);
+			path = Descriptions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -22,7 +22,7 @@ public:
         while (std::getline(in_file, line)) {
             ++line_count;
             if (line.length() > 0) {
-                out_file << std::setw(5) << std::left << line_count << line << std::endl;
+                out_file << std::setw(8) << std::left << line_count << line << std::endl;
             } else {
                 out_file << std::setw(5) << std::setfill(' ') << line << std::endl;
             }

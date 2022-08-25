@@ -195,6 +195,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0286CB1728B7F570006D95CC /* ListChallenge.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ListChallenge.txt; sourceTree = "<group>"; };
+		0286CB1928B7F61A006D95CC /* ListChallenge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ListChallenge.hpp; sourceTree = "<group>"; };
 		028E3C2A28B6D74B00D72BBD /* DequeChallenge.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DequeChallenge.txt; sourceTree = "<group>"; };
 		028E3C2C28B6D82100D72BBD /* DequeChallenge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DequeChallenge.hpp; sourceTree = "<group>"; };
 		02E8C7FF28A3145F0056C7BD /* LearningCPP_UdemyChallenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearningCPP_UdemyChallenges; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -419,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				028E3C2A28B6D74B00D72BBD /* DequeChallenge.txt */,
+				0286CB1728B7F570006D95CC /* ListChallenge.txt */,
 			);
 			path = Descriptions;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				028E3C2928B6D72A00D72BBD /* Descriptions */,
 				02E8C8A328A31DA10056C7BD /* main.cpp */,
 				028E3C2C28B6D82100D72BBD /* DequeChallenge.hpp */,
+				0286CB1928B7F61A006D95CC /* ListChallenge.hpp */,
 			);
 			path = StandardTemplateLibrary;
 			sourceTree = "<group>";

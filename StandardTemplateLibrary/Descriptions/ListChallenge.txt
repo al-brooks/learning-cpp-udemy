@@ -45,3 +45,7 @@ std::cin.clear();
 std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
 
 Make sure you #include <limits> to use it.
+
+Additional Functionality:
+- Go to end of playlist
+- Save playlist to text file so data is updated and saved

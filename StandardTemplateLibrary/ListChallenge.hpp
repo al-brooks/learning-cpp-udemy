@@ -50,7 +50,7 @@ void display_menu() {
 
 // Implement these functions:
 
-void play_current(const std::list<Song> &playlist, const Song &current_song) {
+void play_current(const Song &current_song) {
     // This function should display
     // Playing: followed by the song that is playing
     std::cout
@@ -62,28 +62,20 @@ void play_current(const std::list<Song> &playlist, const Song &current_song) {
 void display_playlist(const std::list<Song> &playlist, const Song &current_song) {
     // This function should display the current playlist
     // and then the current song playing.
-    std::list<Song>::const_iterator curr = playlist.begin();
     std::cout << "\nYour Playlist: " << std::endl;
     std::cout << std::endl;
     int count{0};
-    while (curr != playlist.end()) {
+    for (const Song &song: playlist) {
         ++count;
         std::cout
             << count << ". "
-            << (*curr).get_name()
-            << " by " << (*curr).get_artist()
-            << " (rating: " << (*curr).get_rating() << ")"
+            << song.get_name()
+            << " by " << song.get_artist()
+            << " (rating: " << song.get_rating() << ")"
         << std::endl;
-        ++curr;
     }
     std::cout << std::endl;
-
-    std::cout
-        << "Currently Listening to: "
-        << current_song.get_name()
-        << " by " << current_song.get_artist()
-        << " (rating: " << current_song.get_rating() << ")"
-    << std::endl;
+    play_current(current_song);
 }
 
 // test solution
@@ -121,17 +113,17 @@ void list_challenge() {
             display_playlist(playlist, *current_song);
         } else if (choice == 'f') {
             current_song = playlist.begin();
-            play_current(playlist, *current_song);
+            play_current(*current_song);
         } else if (choice == 'n') {
             ++current_song;
-            play_current(playlist, *current_song);
+            play_current(*current_song);
         } else if (choice == 'p') {
             if (current_song == playlist.begin()) {
                 std::cout << "Sorry, there is no previous song" << std::endl;
                 continue;
             } else {
                 --current_song;
-                play_current(playlist, *current_song);
+                play_current(*current_song);
             }
         } else if (choice == 'a') {
             std::cin.clear();
@@ -150,7 +142,7 @@ void list_challenge() {
 
             current_song = playlist.insert(current_song, Song{name, artist, rating});
             std::cout << "\nSong: has been added" << std::endl;
-            play_current(playlist, *current_song);
+            play_current(*current_song);
         }
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');

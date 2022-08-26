@@ -38,7 +38,9 @@ std::ostream &operator<<(std::ostream &os, const Song &s) {
 }
 
 void display_menu() {
-    std::cout << "\nF - Play First Song" << std::endl;
+    std::cout << std::endl;
+    std::cout << "D - Display Playlist" << std::endl;
+    std::cout << "F - Play First Song" << std::endl;
     std::cout << "N - Play Next Song" << std::endl;
     std::cout << "P = Play Previous Song" << std::endl;
     std::cout << "A = Add and play new Song at current spot" << std::endl;
@@ -51,32 +53,36 @@ void display_menu() {
 void play_current(const std::list<Song> &playlist, const Song &current_song) {
     // This function should display
     // Playing: followed by the song that is playing
-    std::cout << "Playing: " << current_song.get_name() << std::endl;
+    std::cout
+        << "Playing: " << current_song.get_name()
+        << " by: " << current_song.get_artist()
+    << std::endl;
 }
 
 void display_playlist(const std::list<Song> &playlist, const Song &current_song) {
     // This function should display the current playlist
     // and then the current song playing.
     std::list<Song>::const_iterator curr = playlist.begin();
-    std::cout << "Your Playlist: " << std::endl;
-    std::cout << "---------------------------------" << std::endl;
+    std::cout << "\nYour Playlist: " << std::endl;
+    std::cout << std::endl;
+    int count{0};
     while (curr != playlist.end()) {
+        ++count;
         std::cout
-            << "|Song: " << (*curr).get_name()
-            << "|Artist: " << (*curr).get_artist()
-            << "|Rating: " << (*curr).get_rating()
-            << "\n"
+            << count << ". "
+            << (*curr).get_name()
+            << " by " << (*curr).get_artist()
+            << " (rating: " << (*curr).get_rating() << ")"
         << std::endl;
         ++curr;
     }
-    std::cout << "---------------------------------" << std::endl;
+    std::cout << std::endl;
 
-    std::cout << "Currently Listening to: " << std::endl;
     std::cout
-        << "|Song: " << current_song.get_name()
-        << "|Artist: " << current_song.get_artist()
-        << "|Rating: " << current_song.get_rating()
-        << "\n"
+        << "Currently Listening to: "
+        << current_song.get_name()
+        << " by " << current_song.get_artist()
+        << " (rating: " << current_song.get_rating() << ")"
     << std::endl;
 }
 
@@ -96,20 +102,54 @@ void list_challenge() {
     std::cout << "Welcome to your Music Player App" << std::endl;
     display_playlist(playlist, *current_song);
     
-    std::cout << "\n----------------------------------------------" << std::endl;
+    std::cout
+        << "\n------------------------------------------------"
+    << std::endl;
     std::cout << "Please review menu below for additional options:" << std::endl;
-    std::cout << "----------------------------------------------" << std::endl;
-    
+    std::cout
+        << "------------------------------------------------"
+    << std::endl;
+
+
     char choice{};
     do {
         display_menu();
         std::cin >> choice;
         std::tolower(choice);
-        if (choice == 'f') {
+        std::cout << std::endl;
+        if (choice == 'd') {
+            display_playlist(playlist, *current_song);
+        } else if (choice == 'f') {
             current_song = playlist.begin();
             play_current(playlist, *current_song);
         } else if (choice == 'n') {
             ++current_song;
+            play_current(playlist, *current_song);
+        } else if (choice == 'p') {
+            if (current_song == playlist.begin()) {
+                std::cout << "Sorry, there is no previous song" << std::endl;
+                continue;
+            } else {
+                --current_song;
+                play_current(playlist, *current_song);
+            }
+        } else if (choice == 'a') {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::string name;
+            std::cout << "Insert Song Name: ";
+            std::getline(std::cin, name);
+            
+            std::string artist;
+            std::cout << "\nInsert Artist Name: ";
+            std::getline(std::cin, artist);
+
+            int rating;
+            std::cout << "\nInsert Song Rating: ";
+            std::cin >> rating;
+
+            current_song = playlist.insert(current_song, Song{name, artist, rating});
+            std::cout << "\nSong: has been added" << std::endl;
             play_current(playlist, *current_song);
         }
         std::cin.clear();

@@ -116,6 +116,10 @@ void list_challenge() {
             play_current(*current_song);
         } else if (choice == 'n') {
             ++current_song;
+            if (current_song == playlist.end()) {
+                std::cout << "At end of playlist - let's restart" << std::endl;
+                current_song = playlist.begin();
+            }
             play_current(*current_song);
         } else if (choice == 'p') {
             if (current_song == playlist.begin()) {

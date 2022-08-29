@@ -108,7 +108,7 @@ void part2() {
 }
 
 void map_set_challenge() {
-//    part1();
+    part1();
     part2();
 }
 

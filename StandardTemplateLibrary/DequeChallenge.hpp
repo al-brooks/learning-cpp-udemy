@@ -1,5 +1,8 @@
 #ifndef DequeChallenge_hpp
 #define DequeChallenge_hpp
+#include <iostream>
+#include <iomanip>
+#include <vector>
 #include <deque>
 #include <string>
 #include <algorithm>

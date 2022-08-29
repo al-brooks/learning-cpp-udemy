@@ -199,6 +199,9 @@
 		0286CB1928B7F61A006D95CC /* ListChallenge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ListChallenge.hpp; sourceTree = "<group>"; };
 		028E3C2A28B6D74B00D72BBD /* DequeChallenge.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DequeChallenge.txt; sourceTree = "<group>"; };
 		028E3C2C28B6D82100D72BBD /* DequeChallenge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DequeChallenge.hpp; sourceTree = "<group>"; };
+		028E6EC728BD311100704051 /* MapSetChallenge.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MapSetChallenge.txt; sourceTree = "<group>"; };
+		028E6EC928BD31C700704051 /* words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		028E6ECB28BD322500704051 /* MapSetChallenge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MapSetChallenge.hpp; sourceTree = "<group>"; };
 		02E8C7FF28A3145F0056C7BD /* LearningCPP_UdemyChallenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearningCPP_UdemyChallenges; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E8C80228A3145F0056C7BD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		02E8C81D28A318210056C7BD /* StatementsAndOperators */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StatementsAndOperators; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -422,8 +425,17 @@
 			children = (
 				028E3C2A28B6D74B00D72BBD /* DequeChallenge.txt */,
 				0286CB1728B7F570006D95CC /* ListChallenge.txt */,
+				028E6EC728BD311100704051 /* MapSetChallenge.txt */,
 			);
 			path = Descriptions;
+			sourceTree = "<group>";
+		};
+		028E6EC828BD317700704051 /* TextFiles */ = {
+			isa = PBXGroup;
+			children = (
+				028E6EC928BD31C700704051 /* words.txt */,
+			);
+			path = TextFiles;
 			sourceTree = "<group>";
 		};
 		02E8C7F628A3145F0056C7BD = {
@@ -642,10 +654,12 @@
 		02E8C8A228A31DA10056C7BD /* StandardTemplateLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				028E6EC828BD317700704051 /* TextFiles */,
 				028E3C2928B6D72A00D72BBD /* Descriptions */,
 				02E8C8A328A31DA10056C7BD /* main.cpp */,
 				028E3C2C28B6D82100D72BBD /* DequeChallenge.hpp */,
 				0286CB1928B7F61A006D95CC /* ListChallenge.hpp */,
+				028E6ECB28BD322500704051 /* MapSetChallenge.hpp */,
 			);
 			path = StandardTemplateLibrary;
 			sourceTree = "<group>";
